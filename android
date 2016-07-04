@@ -1,0 +1,27 @@
+
+ // split 
+ 
+String CurrentString = "Fruit: they taste good";
+String[] separated = CurrentString.split(":");
+separated[0]; // this will contain "Fruit"
+separated[1]; // this will contain " they taste good"
+
+separated[1] = separated[1].trim();
+
+StringTokenizer tokens = new StringTokenizer(CurrentString, ":");
+String first = tokens.nextToken();// this will contain "Fruit"
+String second = tokens.nextToken();// this will contain " they taste good"
+// in the case above I assumed the string has always that syntax (foo: bar)
+// but you may want to check if there are tokens or not using the hasMoreTokens method
+
+
+// char[]
+String test = "StackOverflow"; 
+char first = test.charAt(0);
+
+//remove spicific character
+
+String result = yourString.replaceAll("[-+.^:,]","");
+String result = yourString.replaceAll("[\\-\\+\\.\\^:,]","");
+String  result = yourString.replaceAll("[^\\w\\s]","")
+String  result = yourString.replaceAll("[^\\p{L}\\p{Z}]","");
