@@ -25,3 +25,6 @@ String result = yourString.replaceAll("[-+.^:,]","");
 String result = yourString.replaceAll("[\\-\\+\\.\\^:,]","");
 String  result = yourString.replaceAll("[^\\w\\s]","")
 String  result = yourString.replaceAll("[^\\p{L}\\p{Z}]","");
+
+
+https://github.com/navasmdc/MaterialDesignLibrary.git
